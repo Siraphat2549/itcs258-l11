@@ -10,6 +10,7 @@ async function bootstrap() {
     }),
   });
   app.useGlobalPipes(new ValidationPipe());
+  app.enableShutdownHooks();
 
   const config = new DocumentBuilder()
     .setTitle('Hotel Booking System API')
